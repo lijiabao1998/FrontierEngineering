@@ -1,0 +1,27 @@
+{
+  "id": "ENG-003",
+  "domain": "engineering",
+  "title": "Fault-resilient robotic control 的 OOD 安全性",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "adaptive/physics-learning controllers在未見payload、friction、actuator degradation與sensor faults下，能否維持constraint safety並知道何時退出自適應。",
+  "known_result": "2026 Scientific Reports提出physics-discovering/digital-twin adaptive control並報告trajectory、energy、disturbance與fault recovery改善。",
+  "open_gap": "formal safety envelope、model discovery errors、online update instability與hardware transfer。",
+  "first_task": "在2D simulated arm/cart-pole建立nominal+fault suite，比PID與adaptive controller；加入未見sign-changing friction。",
+  "evaluator": "tracking、energy、recovery time、hard constraint violations、abstention。",
+  "validation_limits": "simulation tracking高分不等於實機安全；不在真實機器上自動部署。",
+  "completion_criterion": "在預註冊OOD faults下維持硬constraint或可靠fallback，之後實機claim需獨立安全實驗。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。每輪重新查最新版本、實驗條件與失敗案例；simulation成果不得寫成已安全部署。",
+  "screening_queries": [
+    "fault resilient robotic digital twin control 2026"
+  ],
+  "sources": [
+    {
+      "title": "A self-orchestrating physics-discovering neural architecture for adaptive and fault-resilient robotic motion control via RPA and digital twins",
+      "url": "https://www.nature.com/articles/s41598-026-57474-6",
+      "kind": "primary",
+      "supports": "adaptive fault-resilient robotic control案例"
+    }
+  ]
+}

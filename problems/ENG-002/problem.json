@@ -1,0 +1,27 @@
+{
+  "id": "ENG-002",
+  "domain": "engineering",
+  "title": "Multimodal substation fault diagnosis 的跨站泛化",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "在topology、alarms、waveforms與SCADA異質資料中，模型能否跨station/configuration/缺失模態可靠診斷，而非只在同一digital twin scenario generator上高分。",
+  "known_result": "2026 Nature Communications展示digital-twin multi-modal fusion在一座110kV substation及大量CloudPSS scenarios上的高診斷性能。",
+  "open_gap": "cross-site domain shift、sim-to-real gap、unseen topology與rare protection failures。",
+  "first_task": "只用作者公開/合成資料概念重建小toy grid，不接真電網；做topology-held-out與missing-modality baseline。",
+  "evaluator": "fault-location/type accuracy、calibration、OOD rejection、missing-data robustness。",
+  "validation_limits": "同一simulation generator test不等於真實跨站泛化；不產生真實系統操作指令。",
+  "completion_criterion": "在獨立station/data-generation conditions保持校準並有safe abstention。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。每輪重新查最新版本、實驗條件與失敗案例；simulation成果不得寫成已安全部署。",
+  "screening_queries": [
+    "digital twin substation fault diagnosis multimodal 2026"
+  ],
+  "sources": [
+    {
+      "title": "Digital twin-driven fault diagnosis of power substations by multi-modal fusion learning",
+      "url": "https://www.nature.com/articles/s41467-026-73483-5",
+      "kind": "primary",
+      "supports": "substation multimodal digital-twin fault diagnosis"
+    }
+  ]
+}

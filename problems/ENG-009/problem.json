@@ -1,0 +1,27 @@
+{
+  "id": "ENG-009",
+  "domain": "engineering",
+  "title": "Predictive maintenance / RUL 的跨設備 transfer",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "remaining-useful-life與fault prediction模型在不同asset age、load profile、sensor suite與maintenance policy間能否transfer並保持calibration。",
+  "known_result": "agentic/digital-twin engineering趨勢把continuous model update與condition monitoring推向更主動，但cross-asset validity仍是關鍵工程問題。",
+  "open_gap": "censoring、maintenance intervention、sensor drift、fleet heterogeneity與domain shift。",
+  "first_task": "建立synthetic degradation fleet，有known failure time；比較pooled、asset-specific與transfer model。",
+  "evaluator": "time-dependent calibration、MAE、early-warning false alarms、censoring-aware score。",
+  "validation_limits": "維修會改變failure process；只看uncensored failures會selection bias。",
+  "completion_criterion": "在held-out asset families維持RUL calibration與decision-relevant error界。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。每輪重新查最新版本、實驗條件與失敗案例；simulation成果不得寫成已安全部署。",
+  "screening_queries": [
+    "digital twin predictive maintenance transferability 2026"
+  ],
+  "sources": [
+    {
+      "title": "The evolution of digital twins from reactive to agentic systems",
+      "url": "https://www.nature.com/articles/s43588-025-00944-0",
+      "kind": "perspective",
+      "supports": "agentic twins與continuous adaptive engineering系統背景"
+    }
+  ]
+}

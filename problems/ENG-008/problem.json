@@ -1,0 +1,27 @@
+{
+  "id": "ENG-008",
+  "domain": "engineering",
+  "title": "Self-driving laboratories 的工程可擴展性與 provenance",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "SDL從單一專用robotic workflow擴展到多儀器、多protocol、多site時，如何保持互操作、可重現、故障恢復與完整provenance。",
+  "known_result": "2026 Nature Reviews Chemistry把下一階段SDL明確歸納為scalability、generalizability與provenance-complete experimentation。",
+  "open_gap": "hardware abstraction、protocol semantics、calibration drift、closed-loop decision provenance。",
+  "first_task": "建立純software simulated lab含兩台virtual instruments與scheduler，記每個action/input/output lineage，注入instrument timeout。",
+  "evaluator": "recovery、replay reproducibility、trace completeness、scheduler efficiency。",
+  "validation_limits": "software lab不是濕實驗；不自動執行實體化學。",
+  "completion_criterion": "跨不同virtual instruments/protocols可重放並recover，所有決策可追溯。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。每輪重新查最新版本、實驗條件與失敗案例；simulation成果不得寫成已安全部署。",
+  "screening_queries": [
+    "self driving laboratories scalability provenance 2026"
+  ],
+  "sources": [
+    {
+      "title": "The past, present and future of self-driving laboratories",
+      "url": "https://www.nature.com/articles/s41570-026-00847-2",
+      "kind": "review",
+      "supports": "SDL scalability、generalizability與provenance"
+    }
+  ]
+}

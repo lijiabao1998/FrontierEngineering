@@ -1,0 +1,27 @@
+{
+  "id": "ENG-005",
+  "domain": "engineering",
+  "title": "Mixed-autonomy traffic 的安全與 emergent risk",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "在人駕與自動車混合的交通流中，控制策略如何降低局部衝突而不產生system-level instability或風險轉移。",
+  "known_result": "2026 Scientific Reports提出digital-twin/anticipatory risk-field方法處理mixed-autonomy交通的stochastic interactions。",
+  "open_gap": "human-driver model misspecification、penetration rate、rare interactions與network-level spillovers。",
+  "first_task": "用toy ring-road/microscopic simulator比較reactive vs anticipatory controller，做driver-behaviour OOD sweep。",
+  "evaluator": "collision proxies、TTC、throughput、string stability、OOD violations。",
+  "validation_limits": "模擬TTC改善不等於道路事故因果降低；不部署真實交通控制。",
+  "completion_criterion": "跨driver models/penetration rates保持safety-throughput Pareto改善，且無hidden risk displacement。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。每輪重新查最新版本、實驗條件與失敗案例；simulation成果不得寫成已安全部署。",
+  "screening_queries": [
+    "mixed autonomy traffic digital twin safety 2026"
+  ],
+  "sources": [
+    {
+      "title": "Engineering proactive risk fields in mixed-autonomy traffic via anticipatory swarm intelligence: a digital twin perspective",
+      "url": "https://www.nature.com/articles/s41598-026-67471-4",
+      "kind": "primary",
+      "supports": "mixed-autonomy traffic proactive safety模型"
+    }
+  ]
+}

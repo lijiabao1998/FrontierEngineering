@@ -1,0 +1,27 @@
+{
+  "id": "ENG-007",
+  "domain": "engineering",
+  "title": "Digital models 跨尺寸／配置 scaling",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "一個校準過的physics-based digital model能否安全transfer到不同尺寸、幾何或configuration，而不逐一重新實驗校準。",
+  "known_result": "2026 Scientific Reports指出多尺寸/配置逐一校準成本高，研究如何scale digital models。",
+  "open_gap": "dimensionless groups、parameter similarity、geometry-dependent effects與calibration extrapolation。",
+  "first_task": "用簡單beam/thermal RC family建立解析truth，校準一個size後外推其他sizes，對比dimensionless scaling。",
+  "evaluator": "relative error by scale ratio、coverage、constraint violations。",
+  "validation_limits": "幾何相似不保證所有material/boundary effects相似。",
+  "completion_criterion": "在預先定義scale/config family上保持誤差界，超界時能正確拒絕。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。每輪重新查最新版本、實驗條件與失敗案例；simulation成果不得寫成已安全部署。",
+  "screening_queries": [
+    "scaling digital models 2026 engineering"
+  ],
+  "sources": [
+    {
+      "title": "Scaling digital models",
+      "url": "https://www.nature.com/articles/s41598-026-36310-x",
+      "kind": "primary",
+      "supports": "跨尺寸/配置digital model calibration問題"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ENG-004",
+  "domain": "engineering",
+  "title": "Non-smooth hybrid systems 的 uncertainty transport",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "在impact、friction switch、unilateral constraint等event附近，digital twin如何正確傳播state covariance/sensitivity，而不被smooth approximation誤導。",
+  "known_result": "2026 event-aware digital-twin工作把saltation-consistent uncertainty transport用於non-smooth dynamics，指出事件處正是常見framework最脆弱的位置。",
+  "open_gap": "multiple simultaneous events、model error、event-time uncertainty與controller interaction。",
+  "first_task": "用bouncing ball/impact oscillator精確event map作baseline，比naive smooth covariance與saltation-aware propagation。",
+  "evaluator": "event-time error、mean/covariance coverage、constraint crossing、step-size convergence。",
+  "validation_limits": "toy hybrid system通過不代表複雜機械system；數值穩定不等於model正確。",
+  "completion_criterion": "跨不同event geometries維持校準uncertainty並有故意錯event-map負例。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。每輪重新查最新版本、實驗條件與失敗案例；simulation成果不得寫成已安全部署。",
+  "screening_queries": [
+    "non smooth digital twin uncertainty transport saltation 2026"
+  ],
+  "sources": [
+    {
+      "title": "Saltation-consistent event-aware digital twins for uncertainty transport in non-smooth dynamical systems",
+      "url": "https://www.nature.com/articles/s41598-026-53809-5",
+      "kind": "primary",
+      "supports": "non-smooth event處的uncertainty transport"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ENG-010",
+  "domain": "engineering",
+  "title": "Cyber-physical autonomy 的 human override 與 safe delegation",
+  "status": "OPEN",
+  "priority": "C",
+  "checked_on": "2026-09-28",
+  "statement": "當agentic engineering system可自行診斷、規劃、更新controller時，如何形式化哪些動作可delegated、哪些需human approval，以及失聯／模型衝突時如何fail-safe。",
+  "known_result": "2026 agentic digital-twin方向明確增加自主reasoning與action能力，同時需要interoperability和human interaction；工程安全邊界尚需系統化。",
+  "open_gap": "authority semantics、handoff latency、operator workload、automation surprise與model disagreement。",
+  "first_task": "建立toy plant + agent planner + rule-based safety kernel，測三種delegation policies與通信中斷。",
+  "evaluator": "hard violations、safe shutdown rate、false intervention、operator handoff delay。",
+  "validation_limits": "toy authority model不能當真實系統certification；不連critical infrastructure。",
+  "completion_criterion": "在預註冊故障/通信/OOD場景下由獨立safety kernel維持constraint且handoff可追溯。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。每輪重新查最新版本、實驗條件與失敗案例；simulation成果不得寫成已安全部署。",
+  "screening_queries": [
+    "agentic digital twins human interaction autonomy safety 2026"
+  ],
+  "sources": [
+    {
+      "title": "The evolution of digital twins from reactive to agentic systems",
+      "url": "https://www.nature.com/articles/s43588-025-00944-0",
+      "kind": "perspective",
+      "supports": "self-learning autonomous twins與human interaction"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ENG-006",
+  "domain": "engineering",
+  "title": "Sparse sensing 的 full-field reconstruction 與 uncertainty",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "由稀疏sensor重建temperature/strain/flow等full field時，如何同時得到校準uncertainty並辨識不可觀測區域。",
+  "known_result": "2026 GIS digital-twin研究用latent-space enhancement做稀疏temperature field reconstruction與uncertainty-aware sensing。",
+  "open_gap": "sensor placement、distribution shift、model-form error與epistemic/aleatoric uncertainty分離。",
+  "first_task": "用2D heat equation建立known-truth field，隨機/optimized sparse sensors對比；故意移除關鍵區sensor。",
+  "evaluator": "field RMSE、coverage、calibration、sensor budget、OOD detection。",
+  "validation_limits": "synthetic PDE performance不代表真設備；uncertainty需對真誤差校準。",
+  "completion_criterion": "在held-out boundary/source conditions保持coverage，並能標示不可識別區域。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。每輪重新查最新版本、實驗條件與失敗案例；simulation成果不得寫成已安全部署。",
+  "screening_queries": [
+    "sparse sensing full field reconstruction digital twin uncertainty 2026"
+  ],
+  "sources": [
+    {
+      "title": "Uncertainty-aware temperature field reconstruction from sparse samples and sensing via latent-space enhancement for GIS digital twin applications",
+      "url": "https://www.nature.com/articles/s41598-026-52842-8",
+      "kind": "primary",
+      "supports": "稀疏感測full-field reconstruction與UQ"
+    }
+  ]
+}

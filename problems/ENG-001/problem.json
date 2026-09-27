@@ -1,0 +1,27 @@
+{
+  "id": "ENG-001",
+  "domain": "engineering",
+  "title": "Agentic digital twins 的驗證、provenance與interoperability",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "當digital twin從monitoring走向self-learning/agentic action時，如何讓model/data/action lineage可追溯、跨系統互操作，並限制自主決策越界。",
+  "known_result": "2026 Nature Computational Science指出digital twins正從reactive向agentic演化，interoperability、standardization與AI reasoning是關鍵前提。",
+  "open_gap": "online model drift、data provenance、cross-vendor semantics、authority boundaries與safe rollback。",
+  "first_task": "做兩個toy twins共享同一plant state但不同schema，建立provenance log與conflict resolution；故意注入stale sensor。",
+  "evaluator": "state agreement、trace completeness、rollback success、constraint violations。",
+  "validation_limits": "軟體互通不等於physical safety；agentic autonomy不能由本repo直接部署。",
+  "completion_criterion": "在多schema/故障/OOD sandbox下保持可追溯、可回滾與constraint-safe。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。每輪重新查最新版本、實驗條件與失敗案例；simulation成果不得寫成已安全部署。",
+  "screening_queries": [
+    "agentic digital twins interoperability provenance 2026"
+  ],
+  "sources": [
+    {
+      "title": "The evolution of digital twins from reactive to agentic systems",
+      "url": "https://www.nature.com/articles/s43588-025-00944-0",
+      "kind": "perspective",
+      "supports": "agentic digital twins、interoperability與standardization"
+    }
+  ]
+}
