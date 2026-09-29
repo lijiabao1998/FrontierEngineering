@@ -17,4 +17,4 @@
 | ENG-009 | Predictive maintenance / RUL 的跨設備transfer | B |
 | ENG-010 | Cyber-physical autonomy 的human override與safe delegation | C |
 
-每輪依治理 091d6a26a4af8522683711483f2b97afd90efa7f fresh search。所有critical-infrastructure、robotics、traffic題預設只在simulation/public benign data；不自動發控制命令或接入真實系統。
+每輪依治理 f40beb161b6c87201d8082ecbc29c7e0b3eaa402 fresh search。所有critical-infrastructure、robotics、traffic題預設只在simulation/public benign data；不自動發控制命令或接入真實系統。
