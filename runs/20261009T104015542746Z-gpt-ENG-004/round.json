@@ -1,0 +1,94 @@
+{
+  "round_id": "20261009T104015542746Z-gpt-ENG-004",
+  "problem_id": "ENG-004",
+  "agent": "gpt",
+  "branch": "gpt/ENG-004-independent-verification-20261009t104015542746z",
+  "base_sha": "67af7d73a15e801858aa7ee7b4e406d73f249b5d",
+  "started_at": "2026-10-09T10:40:15.542746+00:00",
+  "state": "FINISHED",
+  "acceptance": "Publish and rerun a separate independently implemented verifier against known frozen ENG-004 synthetic results. No author implementation imports. All36 archived ensembles/147456 trajectories must match independent ballistic endpoint within1e-11; complex-step Jacobian must match candidate within1e-12 and det(J)=e^2 within1e-12; covariance error<=0.005 and reset-only error ratio>=20 in all36; 16 event outputs endpoint<=1e-10/time<=1e-11. Preserve exact original frozen spec SHA e1501059792e2f054e1e248b263409eb80b1a2f03d89d23f95ef887586bb5420. Fixed byte-tamper and metric-tamper copies must fail. Do not edit original model, evaluator, results or parent card. Preliminary local reviewer result was already observed; this is transparent deterministic re-verification/publication, not blinded new science.",
+  "not_done": "No new physics, general theorem, arbitrary multiple/grazing events, deployment safety, whole-paper proof audit or field experiment. Remote reviewer PR pending candidate publication.",
+  "budget": {
+    "wall_minutes": 20,
+    "usd": 0,
+    "max_trials": 1,
+    "trial_definition": "one deterministic complete replay of existing archive, no new random search; fixed control checks only"
+  },
+  "preflight": {
+    "checked_at": "2026-10-09T10:42:00.677805+00:00",
+    "verdict": "PARTIAL_PROGRESS",
+    "queries": [
+      {
+        "category": "general",
+        "query": "saltation matrix bouncing ball covariance uncertainty first order",
+        "engine": "web.run search",
+        "outcome": "Known saltation work and independent tutorials found."
+      },
+      {
+        "category": "discipline",
+        "query": "site:arxiv.org saltation matrices covariance hybrid dynamical systems 2306.06862",
+        "engine": "web.run search",
+        "outcome": "Kong et al primary paper located; first-order covariance stated."
+      },
+      {
+        "category": "solution",
+        "query": "hybrid systems uncertainty saltation simultaneous grazing events solved 2026",
+        "engine": "web.run search",
+        "outcome": "Related newer hybrid-estimation work; no scope-matched general resolution established by this bounded search."
+      },
+      {
+        "category": "criticism",
+        "query": "saltation consistent event aware digital twins 53809 correction erratum replication",
+        "engine": "web.run search",
+        "outcome": "Primary article data-availability lists incomplete legacy figure arrays; no definitive complete errata audit."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Saltation Matrices: The Essential Tool for Linearizing Hybrid Dynamical Systems",
+        "url": "https://arxiv.org/html/2306.06862v2",
+        "kind": "primary",
+        "supports": "Section III-D equations38-39 give first-order covariance transport and reset-only failure; read section and limits, not whole-paper proof audit."
+      },
+      {
+        "title": "Saltation-consistent event-aware digital twins for uncertainty transport in non-smooth dynamical systems",
+        "url": "https://www.nature.com/articles/s41598-026-53809-5",
+        "kind": "primary",
+        "supports": "Read applicability/conclusions/data-availability; isolated-event assumptions and missing legacy source arrays constrain scope."
+      }
+    ],
+    "limitations": "Bounded four-query search, not exhaustive correction or novelty audit. No supplementary data copied. Prior reviewer results known; repeat deterministic checks not new experimental discovery.",
+    "scope_comparison": "Verify only the existing four-case isolated-transversal-impact synthetic model. Prior literature already covers first-order saltation covariance; does not resolve broad ENG-004.",
+    "baseline": "Existing admitted gpt ENG-004 synthetic candidate at local67af7d73a15e801858aa7ee7b4e406d73f249b5d; frozen failures and thresholds unchanged.",
+    "sources_read": true,
+    "scope_compared": true,
+    "retractions_checked": true,
+    "licenses_checked": true,
+    "safety_checked": true,
+    "baseline_identified": true,
+    "acceptance_frozen": true
+  },
+  "artifacts": [
+    "problems/ENG-004/experiments/independent_review/independent_reference.py",
+    "problems/ENG-004/experiments/independent_review/verify_engineering.py",
+    "problems/ENG-004/experiments/independent_review/test_negative_controls.py",
+    "problems/ENG-004/experiments/independent_review/README.md",
+    "problems/ENG-004/results/independent_review_20261009/independent-reference.json",
+    "problems/ENG-004/results/independent_review_20261009/engineering-independent-review.json",
+    "runs/20261009T104015542746Z-gpt-ENG-004/REPORT.md",
+    "runs/20261009T104015542746Z-gpt-ENG-004/verification.log",
+    "runs/20261009T104015542746Z-gpt-ENG-004/admission.log",
+    "runs/20261009T104015542746Z-gpt-ENG-004/negative-controls.log"
+  ],
+  "result": {
+    "classification": "INDEPENDENT_FINITE_SYNTHETIC_REPLAY_PASS",
+    "report": "REPORT.md",
+    "parent_problem": "OPEN",
+    "new_stochastic_trials": 0,
+    "deterministic_full_archive_replays": 1,
+    "controls": "changed Jacobian and corrupted raw archive rejected",
+    "publication": "PENDING"
+  },
+  "admitted_at": "2026-10-09T10:42:00.733820+00:00",
+  "finished_at": "2026-10-09T10:51:33.229417+00:00"
+}

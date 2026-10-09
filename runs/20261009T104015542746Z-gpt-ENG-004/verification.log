@@ -1,0 +1,14 @@
+{
+  "verdict": "INDEPENDENT_FINITE_SYNTHETIC_CHECK_PASS",
+  "limits": "Checks only frozen four-case one-impact model and archived draws. No general calibration, novelty, mechanical-system validity or deployment-safety claim. Independent complex-step derivative and covariance arithmetic; not a new empirical experiment. Candidate author test harness not used.",
+  "spec_sha256": "e1501059792e2f054e1e248b263409eb80b1a2f03d89d23f95ef887586bb5420",
+  "particles": 147456,
+  "ensembles": 36,
+  "max_jacobian_gap": 4.440892098500626e-16,
+  "max_particle_endpoint_gap": 0,
+  "max_event_endpoint_gap": 8.881784197001252e-15,
+  "max_event_time_gap": 8.881784197001252e-16,
+  "maximum_covariance_relative_error": 6.826661001677093e-05,
+  "minimum_error_ratio": 14645.248112908008,
+  "tamper_control": "36/36 appended-byte archives rejected by hash mismatch"
+}
