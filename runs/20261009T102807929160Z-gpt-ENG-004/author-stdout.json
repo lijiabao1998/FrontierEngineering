@@ -1,0 +1,15 @@
+{
+  "scope": "Author-generated synthetic metrics; independent verification pending. No scientific completion or safety certification.",
+  "configuration_count": 76,
+  "particle_trajectories": 147456,
+  "max_event_time_error": 8.881784197001252e-16,
+  "max_event_endpoint_error": 8.881784197001252e-15,
+  "max_saltation_direct_jacobian_error": 4.440892098500626e-16,
+  "worst_best_fd_error": 1.3696999090484496e-10,
+  "max_relative_covariance_error": 6.826661001994398e-05,
+  "minimum_reset_to_saltation_error_ratio": 14645.248112227284,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "elapsed_seconds": 0.9199869189978926,
+  "frozen_spec_sha256": "e1501059792e2f054e1e248b263409eb80b1a2f03d89d23f95ef887586bb5420"
+}
