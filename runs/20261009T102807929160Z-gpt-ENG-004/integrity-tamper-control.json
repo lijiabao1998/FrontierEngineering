@@ -1,0 +1,8 @@
+{
+  "action": "Changed first ensemble particle count 4096 to 4095 in an in-memory byte copy only. Original retained.",
+  "expected_original_sha256": "687bee8980d91b647bb7f0d0e6cb71aa0b3e89f0766f96f866e2469b6a898f63",
+  "original_matches": true,
+  "tampered_sha256": "a5742d653b3c155e7fd0d32987cbf68f68c1866e786e6ef139879e727588a09f",
+  "tampered_matches": false,
+  "interpretation": "Tampered bytes rejected by exact SHA-256 comparison; does not validate science or provide trusted signing."
+}

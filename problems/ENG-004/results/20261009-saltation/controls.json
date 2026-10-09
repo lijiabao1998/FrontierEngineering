@@ -1,0 +1,151 @@
+[
+  {
+    "case": "nominal",
+    "direct_jacobian_max_abs_error": 3.982444716584408,
+    "injection": "reset_only",
+    "jacobian": [
+      [
+        1.0,
+        0.29687336797781155
+      ],
+      [
+        0.0,
+        -0.8
+      ]
+    ]
+  },
+  {
+    "case": "nominal",
+    "direct_jacobian_max_abs_error": 7.964889433168816,
+    "injection": "wrong_timing_sign",
+    "jacobian": [
+      [
+        2.129341636581783,
+        0.7842930573160689
+      ],
+      [
+        -3.9824447165844084,
+        -2.518808466532428
+      ]
+    ]
+  },
+  {
+    "case": "elastic",
+    "direct_jacobian_max_abs_error": 4.424938573982676,
+    "injection": "reset_only",
+    "jacobian": [
+      [
+        1.0,
+        0.2631926310864573
+      ],
+      [
+        0.0,
+        -1.0
+      ]
+    ]
+  },
+  {
+    "case": "elastic",
+    "direct_jacobian_max_abs_error": 8.849877147965351,
+    "injection": "wrong_timing_sign",
+    "jacobian": [
+      [
+        2.254824040646426,
+        0.8047700636845213
+      ],
+      [
+        -4.424938573982676,
+        -2.909787185036031
+      ]
+    ]
+  },
+  {
+    "case": "translated_guard",
+    "direct_jacobian_max_abs_error": 3.982444716584408,
+    "injection": "reset_only",
+    "jacobian": [
+      [
+        1.0,
+        0.29687336797781155
+      ],
+      [
+        0.0,
+        -0.8
+      ]
+    ]
+  },
+  {
+    "case": "translated_guard",
+    "direct_jacobian_max_abs_error": 7.964889433168816,
+    "injection": "wrong_timing_sign",
+    "jacobian": [
+      [
+        2.129341636581783,
+        0.7842930573160689
+      ],
+      [
+        -3.9824447165844084,
+        -2.518808466532428
+      ]
+    ]
+  },
+  {
+    "case": "ood_low_gravity",
+    "direct_jacobian_max_abs_error": 1.6804312028868125,
+    "injection": "reset_only",
+    "jacobian": [
+      [
+        1.0,
+        0.6666607873955306
+      ],
+      [
+        0.0,
+        -0.45
+      ]
+    ]
+  },
+  {
+    "case": "ood_low_gravity",
+    "direct_jacobian_max_abs_error": 3.360862405773625,
+    "injection": "wrong_timing_sign",
+    "jacobian": [
+      [
+        1.9477953556586534,
+        1.4259826488743295
+      ],
+      [
+        -1.6804312028868125,
+        -1.796269678834147
+      ]
+    ]
+  },
+  {
+    "covariance_max_abs_error": 4.235164736271502e-22,
+    "injection": "none_preimpact_positive",
+    "jacobian": [
+      [
+        1.0,
+        0.2
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  {
+    "injection": "unsupported_boundary",
+    "observed": "rejected",
+    "reason": "unsupported initial/model condition"
+  },
+  {
+    "injection": "unsupported_boundary",
+    "observed": "rejected",
+    "reason": "not exactly one separated impact"
+  },
+  {
+    "injection": "unsupported_boundary",
+    "observed": "rejected",
+    "reason": "unsupported initial/model condition"
+  }
+]
