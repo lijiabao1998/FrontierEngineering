@@ -5,7 +5,7 @@
   "branch": "gpt/ENG-004-coverage-bias-independent-20261011",
   "base_sha": "548813fd985a9cdc24046982610bfcf74a4cae57",
   "started_at": "2026-10-11T19:33:46.773525+00:00",
-  "state": "ADMITTED",
+  "state": "FINISHED",
   "acceptance": "Frozen PROTOCOL.json SHA256 7cf110e6f80ae6b1c457afac0020e1ca058c7e555802d97d6d05b3d3ce83e7e3. All36 archived hashes and4096rows/combinations exact;72coverages exact;72bias within1e-12; both semantic mutants rejected; no ambiguous numerical boundary; total fail-closed.",
   "not_done": "Finite archived synthetic one-impact cases only. Frozen nominal/J inherited from PR5 independent complex-step reference; not rederived. Population diagonal covariance reused; no empirical covariance revalidation, new samples, controller, joint coverage, safety threshold or deployment evidence. Seed reuse across cases/scales means 36 ensembles are not independent replicates. Boundary ambiguity means INCOMPLETE; no threshold adjustment. Search cannot prove no corrections or universally resolved uncertainty transport.",
   "budget": {
@@ -93,7 +93,17 @@
     "problems/ENG-004/experiments/independent_20261011",
     "problems/ENG-004/results/independent_20261011"
   ],
-  "result": null,
+  "result": {
+    "verdict": "INDEPENDENT_ARCHIVED_COVERAGE_BIAS_PASS",
+    "child_exit_code": 0,
+    "scientific_all_criteria_passed": true,
+    "broad_problem_completion": false,
+    "research_runs": 1,
+    "usd": 0,
+    "summary": "problems/ENG-004/results/independent_20261011/attempt-1/result.json",
+    "raw_stdout": "problems/ENG-004/results/independent_20261011/attempt-1/stdout.txt",
+    "raw_stderr": "problems/ENG-004/results/independent_20261011/attempt-1/stderr.txt"
+  },
   "public_claim": {
     "status": "POSTED_AND_READ_BACK",
     "url": "https://github.com/lijiabao1998/FrontierEngineering/pull/5#issuecomment-6112951135",
@@ -102,7 +112,14 @@
     "comment_id": 6112951135
   },
   "execution": {
-    "status": "NOT_RUN"
+    "finished_at": "2026-10-11T19:48:00.251449+00:00",
+    "wall_seconds": 0.2731642999860924,
+    "child_exit_code": 0,
+    "timed_out": false,
+    "cleanup": {},
+    "result_present": true,
+    "verdict": "INDEPENDENT_ARCHIVED_COVERAGE_BIAS_PASS",
+    "status": "COMPLETED"
   },
   "execution_inputs_sha256": {
     "problems/ENG-004/experiments/independent_20261011/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
@@ -165,5 +182,7 @@
     "problems/ENG-004/experiments/independent_20261011/verify.py": "04f663b5898fe6cb930c133843ce20d60eb93a7f526a23a3368b0503fb4fe8b6",
     "problems/ENG-004/experiments/independent_20261011/WEB_TRACE.json": "facb3e425fb41187c14f048ebb950661811a57c9d3c23408861681ccce94aa66"
   },
-  "admitted_at": "2026-10-11T19:47:10.696587+00:00"
+  "admitted_at": "2026-10-11T19:47:10.696587+00:00",
+  "finished_at": "2026-10-11T19:48:00.251449+00:00",
+  "independent_review": "Static prelaunch plus final artifact-only review; no reviewer numerical replay."
 }
