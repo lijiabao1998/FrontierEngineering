@@ -1,0 +1,106 @@
+{
+  "scope": "REPLICATION: fixed-time uncertainty after one isolated transversal impact of synthetic 1D ballistic point mass; no controller, no real device, no field safety claim; parent ENG-004 remains OPEN.",
+  "frozen_at": "2026-10-09T10:29:50.765829+00:00",
+  "plant": {
+    "flow": "dh/dt=v, dv/dt=-g",
+    "guard": "h=floor with incoming v<0",
+    "reset": "h unchanged, v_plus=-e*v_minus",
+    "exact_solution": "tau=(v0+sqrt(v0^2+2*g*(h0-floor)))/g; w=sqrt(v0^2+2*g*(h0-floor)); u=T-tau; h(T)=floor+e*w*u-g*u^2/2; v(T)=e*w-g*u",
+    "domain": "One impact only, tau<T<tau+2*e*w/g; initial h>floor; g>0; 0<e<=1; no grazing or Zeno; deterministic known guard/reset parameters."
+  },
+  "sensor_model": "None: fully observed synthetic initial state; no fitting, training, sensor noise or physical calibration.",
+  "nominal_and_fault_separation": {
+    "nominal": "First three frozen cases, Gaussian initial perturbations with diagonal population covariance.",
+    "ood": "Different gravity, restitution, initial height and horizon in ood_low_gravity, not redrawn from nominal generator.",
+    "faults": [
+      "reset-Jacobian-only covariance",
+      "sign-flipped saltation timing term",
+      "grid-delayed event localization",
+      "corrupted output hash"
+    ],
+    "stop_rules": [
+      "Stop on second impact, unsupported initial state, non-finite numeric output, wall deadline or budget exhaustion.",
+      "No real controls, credentials, paid resources, package installation or network calls from experiment."
+    ]
+  },
+  "cases": [
+    {
+      "name": "nominal",
+      "h0": 1.0,
+      "v0": -0.2,
+      "floor": 0.0,
+      "g": 9.81,
+      "e": 0.8,
+      "T": 0.6
+    },
+    {
+      "name": "elastic",
+      "h0": 1.0,
+      "v0": -0.2,
+      "floor": 0.0,
+      "g": 9.81,
+      "e": 1.0,
+      "T": 0.6
+    },
+    {
+      "name": "translated_guard",
+      "h0": 1.25,
+      "v0": -0.2,
+      "floor": 0.25,
+      "g": 9.81,
+      "e": 0.8,
+      "T": 0.6
+    },
+    {
+      "name": "ood_low_gravity",
+      "h0": 0.6,
+      "v0": -0.1,
+      "floor": 0.0,
+      "g": 1.62,
+      "e": 0.45,
+      "T": 1.1
+    }
+  ],
+  "sample_plan": {
+    "seeds": [
+      7,
+      23,
+      101
+    ],
+    "scales": [
+      1.0,
+      0.5,
+      0.25
+    ],
+    "n_per_run": 4096,
+    "sigma_h": 0.001,
+    "sigma_v": 0.002,
+    "covariance_comparison": "Compare centered empirical output covariance to J * realized centered input sample covariance * J^T, removing input covariance Monte Carlo variation. This is first-order transport validation, not population calibration or general coverage.",
+    "reported_only": "Empirical 95% marginal interval coverage using population covariance, mean bias, runtime and same-mode fractions; descriptive, no inference claim."
+  },
+  "step_sizes": [
+    0.08,
+    0.04,
+    0.02,
+    0.01
+  ],
+  "fd_steps": [
+    0.0001,
+    1e-05,
+    1e-06
+  ],
+  "acceptance": {
+    "A1_exact_event": "Event-aware ballistic-flow and bisection-root solver first-event time absolute error <=1e-11 s, endpoint max absolute error <=1e-10, across all four cases and four step sizes.",
+    "A2_sensitivity": "Saltation-composed Jacobian vs direct derivative of closed-form endpoint: max absolute error <=1e-12; centered finite-difference best-step error <=1e-7.",
+    "A3_covariance": "For all 36 ensembles: relative Frobenius covariance error <=0.005 and >=20-fold smaller than reset-Jacobian-only baseline; all samples must have exactly one impact before T.",
+    "A4_controls": "Pre-impact flow derivative/covariance positive control <=1e-12; reset-only and sign-flipped timing matrices fail A2 with error >1e-3; grid-delay event time error >1e-4 on >=1 frozen case; tampered output fails SHA-256 integrity validation.",
+    "A5_scope": "Preserve all failures and controls. Independent reviewer pending means no independent verification claim; no protected card/evaluator edits; no completion or deployment claims."
+  },
+  "budget": {
+    "wall_minutes": 30,
+    "usd": 0,
+    "max_trials": 100,
+    "definition": "36 ensemble trial configurations, 16 event step-size configurations, 12 finite-difference configurations, controls; <=100 configurations total. Each ensemble has 4096 cheap analytic trajectories."
+  },
+  "environment": "Python 3.12 standard library only; one cloud CPU process; binary64 synthetic numerical baseline."
+}

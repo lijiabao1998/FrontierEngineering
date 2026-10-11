@@ -1,0 +1,102 @@
+{
+  "problems/ENG-004/results/independent_20261011/.gitattributes": {
+    "bytes": 9,
+    "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+  },
+  "problems/ENG-004/results/independent_20261011/attempt-1/execution.json": {
+    "bytes": 274,
+    "sha256": "099e8833c37a003c3bb0e12839f3ecb4b14787a52152c73d7ac63c5bb612ec62"
+  },
+  "problems/ENG-004/results/independent_20261011/attempt-1/launch.json": {
+    "bytes": 1189,
+    "sha256": "924a45237a275c4d376372be993674357441ea08c8ae8b5b93cffca4641c6476"
+  },
+  "problems/ENG-004/results/independent_20261011/attempt-1/mutants/BIAS_PLUS_1E6.json": {
+    "bytes": 6060,
+    "sha256": "bcfaba91f45ba6ebbbc6e9c48db1019504469f35d508428a1e72b8c4ca8ce5da"
+  },
+  "problems/ENG-004/results/independent_20261011/attempt-1/mutants/COVERAGE_PLUS_ONE_PARTICLE.json": {
+    "bytes": 6060,
+    "sha256": "45eab93221fae7c2dffc7d97580617397ed7fda83bbd3d14969b340cd343f42e"
+  },
+  "problems/ENG-004/results/independent_20261011/attempt-1/result.json": {
+    "bytes": 28315,
+    "sha256": "ed656c3d8e64e174092c49b66222ec837385690805adef54e6845a53ede11175"
+  },
+  "problems/ENG-004/results/independent_20261011/attempt-1/stderr.txt": {
+    "bytes": 98,
+    "sha256": "8531d820d22f5cdadd3f00c00d592e13c211ecf2ec0fe113c1931848a5ccc97d"
+  },
+  "problems/ENG-004/results/independent_20261011/attempt-1/stdout.txt": {
+    "bytes": 993,
+    "sha256": "1ecaff21f35b814ddc39e6a2a17ff60875dbe791e8dfa6377158a8a0be783542"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/eng-admit.json": {
+    "bytes": 534,
+    "sha256": "ec41ec4979a8c2bf158a8206f5d85cc213b4e1d00931328cb0b96c0482cb8d06"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/eng-admit.stderr.txt": {
+    "bytes": 98,
+    "sha256": "8531d820d22f5cdadd3f00c00d592e13c211ecf2ec0fe113c1931848a5ccc97d"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/eng-admit.stdout.txt": {
+    "bytes": 98,
+    "sha256": "d32706599cfee5f07889d6f015e1dfb7ed31dbd196e526a039e31bc97064d132"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/eng-launch.json": {
+    "bytes": 531,
+    "sha256": "8887eba020398f4a0b59b251b1fa314ebf2dcb0f798243501e7ba8ca050fa033"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/eng-launch.stderr.txt": {
+    "bytes": 98,
+    "sha256": "8531d820d22f5cdadd3f00c00d592e13c211ecf2ec0fe113c1931848a5ccc97d"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/eng-launch.stdout.txt": {
+    "bytes": 1331,
+    "sha256": "9d5bd1d81f30f8652159355787c9821463f4d1cebe2f543bc166468c25114242"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/protocol-commit.json": {
+    "bytes": 321,
+    "sha256": "0342a3c3de4bfd8142a945719bb4851c615aa0ea04246f14f34fa653c96445c0"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/protocol-commit.stderr.txt": {
+    "bytes": 98,
+    "sha256": "8531d820d22f5cdadd3f00c00d592e13c211ecf2ec0fe113c1931848a5ccc97d"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/protocol-commit.stdout.txt": {
+    "bytes": 276,
+    "sha256": "90c83688f1c2f5dc47f5ac5e203d72e79106e378bbcfcea752498cb8ff7ba24d"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/seal.json": {
+    "bytes": 310,
+    "sha256": "64b66834ec9797c4629326e2aa20c5ed161e4f71aa98da73cd1ff5f937323951"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/seal.stderr.txt": {
+    "bytes": 98,
+    "sha256": "8531d820d22f5cdadd3f00c00d592e13c211ecf2ec0fe113c1931848a5ccc97d"
+  },
+  "problems/ENG-004/results/independent_20261011/commands/seal.stdout.txt": {
+    "bytes": 210,
+    "sha256": "53b830272894d59999d97030a46dcfe4293ce4af25fc000b77a64c5e10f3565a"
+  },
+  "problems/ENG-004/results/independent_20261011/INDEPENDENT_REVIEW.md": {
+    "bytes": 11333,
+    "sha256": "14764e514462f9526d153e35793a39f0c3c80111d25e55f73af12dfda58273b4"
+  },
+  "problems/ENG-004/results/independent_20261011/preparation-failures/PREPARATION_READ_ATTEMPTS.json": {
+    "bytes": 72787,
+    "sha256": "644b8f1f74d297e8bcc66151b5dc23ba4cc15c01264662f0c1cd623e64f678aa"
+  },
+  "problems/ENG-004/results/independent_20261011/preparation-failures/prepare-first-failed.json": {
+    "bytes": 319,
+    "sha256": "380b19a8e3ebd79ea92a2d13f0e66fa0d3edb27846c44983233d028b19308ac6"
+  },
+  "problems/ENG-004/results/independent_20261011/preparation-failures/prepare-first-failed.stderr.txt": {
+    "bytes": 1086,
+    "sha256": "9dfd9f9759941c40639e58376ebca04c2faa12b0d619e329f9ba39a110a20167"
+  },
+  "problems/ENG-004/results/independent_20261011/ROUND_REPORT.md": {
+    "bytes": 2212,
+    "sha256": "23703fb68ef5e8e58e80039d3ca33364d7078ddc630ecd675abc1cba85f264a3"
+  }
+}

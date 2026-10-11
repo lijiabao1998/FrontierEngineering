@@ -1,0 +1,12 @@
+Failed to find real location of C:\Users\Leon1\AppData\Local\Programs\Python\Python313\python.exe
+Traceback (most recent call last):
+  File "C:\Users\Leon1\Documents\Codex\2026-10-12\task\third-batch-independent-20261011\prepare.py", line 40, in <module>
+    protocol=json.loads((here/'PROTOCOL.json').read_text());rpath=repo/'runs'/rid/'round.json';r=json.loads(rpath.read_text());r['branch']=branch;r['budget'].update(protocol['budget']);r['preflight'].update(protocol['preflight'])
+                                                                                                            ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Leon1\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Leon1\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 633, in read_text
+    return f.read()
+           ~~~~~~^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xaa in position 373: illegal multibyte sequence

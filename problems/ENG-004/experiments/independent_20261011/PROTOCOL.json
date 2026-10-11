@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "problem": "ENG-004",
+  "source_head": "548813fd985a9cdc24046982610bfcf74a4cae57",
+  "parent_head": "e7821899751f7a5bdaf3700ea5aea5c4de5140a9",
+  "scope": "Bounded independent archived coverage/bias verification, previously unverified per-value fields.",
+  "plant": "Frozen four-case one-impact 1D ballistic model with deterministic known guard/reset; no grazing/Zeno.",
+  "fault_set": "Two semantic report mutants:coverage+1/4096,bias+1e-6. No physical fault injection.",
+  "operating_envelope": "Existing4cases×seeds7/23/101×scales1/.5/.25,36archives4096records<5d each.",
+  "safety_constraints": "Offline synthetic archive only; no network/real device calls in verifier, no closed-loop/field-safety evidence.",
+  "cases": [
+    "nominal",
+    "elastic",
+    "translated_guard",
+    "ood_low_gravity"
+  ],
+  "seeds": [
+    7,
+    23,
+    101
+  ],
+  "scales": [
+    1,
+    0.5,
+    0.25
+  ],
+  "definition": "Reuse frozen PR5 independent endpoint and complex-step J. Sigma=diag((.001scale)^2,(.002scale)^2), P=J Sigma Jt; marginal inclusive abs(hT/vT-nominal)<=1.959963984540054sqrt(Pkk). Bias=math.fsum(output)/4096-nominal. Coverage compared as exact integer numerators/4096; bias tolerance1e-12. MarkINCOMPLETE if minimum boundary margin <=16*(ulp(radius)+ulp(abs(output))+ulp(abs(nominal))); no tolerance adjustment.",
+  "controls": [
+    {
+      "name": "COVERAGE_PLUS_ONE_PARTICLE",
+      "key": "nominal-7-1.0",
+      "field": "coverage",
+      "component": 0,
+      "delta": 1,
+      "reported_fraction_delta": 0.000244140625
+    },
+    {
+      "name": "BIAS_PLUS_1E6",
+      "key": "nominal-7-1.0",
+      "field": "bias",
+      "component": 0,
+      "delta": 0.000001
+    }
+  ],
+  "acceptance": "All36 archived hashes and4096rows/combinations exact;72coverages exact;72bias within1e-12; both semantic mutants rejected; no ambiguous numerical boundary; total fail-closed.",
+  "limits": "Finite archived synthetic one-impact cases only. Frozen nominal/J inherited from PR5 independent complex-step reference; not rederived. Population diagonal covariance reused; no empirical covariance revalidation, new samples, controller, joint coverage, safety threshold or deployment evidence. Seed reuse across cases/scales means 36 ensembles are not independent replicates. Boundary ambiguity means INCOMPLETE; no threshold adjustment. Search cannot prove no corrections or universally resolved uncertainty transport.",
+  "preflight": {
+    "checked_at": "2026-10-11T19:38:22+00:00",
+    "verdict": "PARTIAL_PROGRESS",
+    "queries": [
+      {
+        "category": "general",
+        "query": "event aware uncertainty transport saltation digital twin non smooth 2026",
+        "engine": "web.run search index",
+        "outcome": "Fresh query after official round start; primary readings recorded separately; no full literature adjudication."
+      },
+      {
+        "category": "discipline",
+        "query": "site:nature.com s41598-026-53809-5 Saltation-consistent event-aware digital twins",
+        "engine": "web.run search index",
+        "outcome": "Fresh query after official round start; primary readings recorded separately; no full literature adjudication."
+      },
+      {
+        "category": "solution",
+        "query": "bouncing ball saltation matrix uncertainty coverage verification existing solved method",
+        "engine": "web.run search index",
+        "outcome": "Fresh query after official round start; primary readings recorded separately; no full literature adjudication."
+      },
+      {
+        "category": "criticism",
+        "query": "s41598-026-53809-5 correction erratum retraction limitations Gaussian",
+        "engine": "web.run search index",
+        "outcome": "Fresh query after official round start; primary readings recorded separately; no full literature adjudication."
+      },
+      {
+        "category": "solution",
+        "query": "\"saltation\" \"uncertainty transport\" \"solved\" coverage",
+        "engine": "web.run search index",
+        "outcome": "Undated search; mixed/noisy results. No independently verified universal same-scope resolution."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Saltation-consistent event-aware digital twins for uncertainty transport in non-smooth dynamical systems",
+        "url": "https://www.nature.com/articles/s41598-026-53809-5",
+        "kind": "primary",
+        "version": "2026; accessed2026-10-11",
+        "read_scope": "Abstract and architecture/uncertainty discussion only",
+        "supports": "Related event-aware transport framework; not a new method claim from our archived statistics."
+      },
+      {
+        "title": "Saltation Matrices: The Essential Tool for Linearizing Hybrid Dynamical Systems",
+        "url": "https://arxiv.org/abs/2306.06862",
+        "kind": "primary",
+        "version": "v3 2024-08-30",
+        "read_scope": "Abstract and submission/version metadata",
+        "supports": "Saltation is established linearization methodology."
+      },
+      {
+        "title": "The Uncertainty Aware Salted Kalman Filter",
+        "url": "https://arxiv.org/abs/2202.12729",
+        "kind": "primary",
+        "version": "v2 2022-07-29",
+        "read_scope": "Abstract and version metadata",
+        "supports": "Uncertain guards/reset parameters require separate treatment; outside this fixed-parameter archive."
+      }
+    ],
+    "limitations": "Finite archived synthetic one-impact cases only. Frozen nominal/J inherited from PR5 independent complex-step reference; not rederived. Population diagonal covariance reused; no empirical covariance revalidation, new samples, controller, joint coverage, safety threshold or deployment evidence. Seed reuse across cases/scales means 36 ensembles are not independent replicates. Boundary ambiguity means INCOMPLETE; no threshold adjustment. Search cannot prove no corrections or universally resolved uncertainty transport.",
+    "scope_comparison": "Known saltation methodology; this archive arithmetic closes a report verification gap, not the broad hybrid uncertainty problem.",
+    "baseline": "PR5 independent trajectory/J/covariance verification exists;72per-value coverage and72bias not yet verified. Nominal seed7scale1 inherited anchors [.954345703125,.94921875],[-5.799101252312866e-6,5.219509491638519e-5].",
+    "sources_read": true,
+    "scope_compared": true,
+    "retractions_checked": true,
+    "licenses_checked": true,
+    "safety_checked": true,
+    "baseline_identified": true,
+    "acceptance_frozen": true
+  },
+  "budget": {
+    "wall_minutes": 30,
+    "usd": 0,
+    "cpu_affinity_count": 1,
+    "concurrency": 1,
+    "preparation_started_at": "2026-10-11T19:26:51+00:00",
+    "preparation_stop_deadline": "2026-10-11T19:56:51+00:00"
+  },
+  "execution": "NOT_RUN"
+}

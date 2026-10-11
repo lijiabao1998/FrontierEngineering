@@ -1,0 +1,81 @@
+{
+  "engineering": [
+    {
+      "case": "nominal",
+      "endpoint": [
+        0.4582513175129609,
+        1.8951277398623316
+      ],
+      "complex_step_jacobian": [
+        [
+          -0.12934163658178321,
+          -0.19054632136044597
+        ],
+        [
+          3.9824447165844084,
+          0.918808466532428
+        ]
+      ],
+      "determinant": 0.64,
+      "expected_determinant": 0.6400000000000001
+    },
+    {
+      "case": "elastic",
+      "endpoint": [
+        0.6075903527921788,
+        2.781919710958146
+      ],
+      "complex_step_jacobian": [
+        [
+          -0.2548240406464258,
+          -0.27838480151160655
+        ],
+        [
+          4.424938573982676,
+          0.9097871850360311
+        ]
+      ],
+      "determinant": 0.9999999999999996,
+      "expected_determinant": 1.0
+    },
+    {
+      "case": "translated_guard",
+      "endpoint": [
+        0.7082513175129609,
+        1.8951277398623316
+      ],
+      "complex_step_jacobian": [
+        [
+          -0.12934163658178321,
+          -0.19054632136044597
+        ],
+        [
+          3.9824447165844084,
+          0.918808466532428
+        ]
+      ],
+      "determinant": 0.64,
+      "expected_determinant": 0.6400000000000001
+    },
+    {
+      "case": "ood_low_gravity",
+      "endpoint": [
+        0.11564560187838926,
+        0.14489047558075968
+      ],
+      "complex_step_jacobian": [
+        [
+          0.05220464434134677,
+          -0.09266107408326815
+        ],
+        [
+          1.680431202886813,
+          0.8962696788341473
+        ]
+      ],
+      "determinant": 0.20250000000000012,
+      "expected_determinant": 0.2025
+    }
+  ],
+  "scope": "Independent complex-step derivatives; same frozen synthetic model, not real-world evidence."
+}

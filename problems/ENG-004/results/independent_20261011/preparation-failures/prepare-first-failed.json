@@ -1,0 +1,1 @@
+{"command":["python","third-batch-independent-20261011/prepare.py"],"exit_code":1,"classification":"preparation_text_encoding_failure_no_scientific_execution","recovered":"Explicit UTF-8 read then metadata-only re-export; no numerical retry","stderr":"prepare-first-failed.stderr.txt","source":"preserved tool output"}
