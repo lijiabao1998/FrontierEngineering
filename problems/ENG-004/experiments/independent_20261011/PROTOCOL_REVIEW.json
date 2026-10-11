@@ -1,0 +1,24 @@
+{
+  "verdict": "STATIC_PASS",
+  "scientific_execution": "NOT_RUN",
+  "independent_experimental_replay": "NOT_RUN",
+  "admission": "NOT_CERTIFIED_BY_THIS_REVIEW",
+  "reviewer": "/root/independent_review",
+  "reviewed_at_utc": "2026-10-11T19:44:53.0258110Z",
+  "review_kind": "static_protocol_harness_and_snapshot_integrity",
+  "hard_deadline_utc": "2026-10-11T19:56:51Z",
+  "blockers": [],
+  "report": "evidence/THIRD_STATIC_REVIEW.md",
+  "files": {
+    "FrontierMedicine/problems/MED-001/experiments/independent_20261011/PROTOCOL.json": "34527226a6f4a8c39baa1fc6d3bdba75b5e373467397fc854f397cd63c7280b7",
+    "FrontierMedicine/problems/MED-001/experiments/independent_20261011/verify.py": "117c0c686ad8e70f0e8e355701bc5d2a9ef8bec436433bc519f1f83aefcb7afe",
+    "FrontierMedicine/problems/MED-001/experiments/independent_20261011/common.py": "067138ed5c0c93d22b4ba3a1188e32e60b6e94500477f0b05db9f26080cc976d",
+    "FrontierMedicine/problems/MED-001/experiments/independent_20261011/admission_guard.py": "bdb2e5adc78e3746d3d5969a767ad31e452e97adddf1af2fbed1cb7c4ff3eace",
+    "FrontierMedicine/problems/MED-001/experiments/independent_20261011/run_bounded.py": "ca43afe0e3cfda5f615fe2f05f5d3d00782a16999e48e2b5ced8db72fb8e86a6",
+    "FrontierEngineering/problems/ENG-004/experiments/independent_20261011/PROTOCOL.json": "7cf110e6f80ae6b1c457afac0020e1ca058c7e555802d97d6d05b3d3ce83e7e3",
+    "FrontierEngineering/problems/ENG-004/experiments/independent_20261011/verify.py": "04f663b5898fe6cb930c133843ce20d60eb93a7f526a23a3368b0503fb4fe8b6",
+    "FrontierEngineering/problems/ENG-004/experiments/independent_20261011/common.py": "067138ed5c0c93d22b4ba3a1188e32e60b6e94500477f0b05db9f26080cc976d",
+    "FrontierEngineering/problems/ENG-004/experiments/independent_20261011/admission_guard.py": "bdb2e5adc78e3746d3d5969a767ad31e452e97adddf1af2fbed1cb7c4ff3eace",
+    "FrontierEngineering/problems/ENG-004/experiments/independent_20261011/run_bounded.py": "ca43afe0e3cfda5f615fe2f05f5d3d00782a16999e48e2b5ced8db72fb8e86a6"
+  }
+}
